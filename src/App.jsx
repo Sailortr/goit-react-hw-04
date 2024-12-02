@@ -41,7 +41,7 @@ const App = () => {
       {/* Toast bildirimlerini etkinleştirir */}
       <Toaster />
 
-      <SearchBar fetchImages={fetchImages} />
+      <SearchBar fetchImages={fetchImages} clearImages={() => setImages([])} />
       {error ? (
         <ErrorMessage message={error} />
       ) : (
