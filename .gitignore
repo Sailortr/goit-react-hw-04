@@ -23,5 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 
-// proje api key number.
-.env
