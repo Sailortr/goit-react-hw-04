@@ -2,8 +2,13 @@ import React from "react";
 
 const ImageCard = ({ image, onImageClick }) => {
   return (
-    <div className="imageCard" onClick={() => onImageClick(image.urls.full)}>
-      <img src={image.urls.thumb} alt={image.alt_description} />
+    <div className="imageCard">
+      <img
+        src={image.urls.small}
+        alt={image.alt_description}
+        onClick={() => onImageClick(image.urls.full)}
+        style={{ cursor: "pointer" }}
+      />
     </div>
   );
 };
