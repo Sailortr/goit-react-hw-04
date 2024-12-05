@@ -29,11 +29,11 @@ const SearchBar = ({ fetchImages, clearImages }) => {
         className="searchInput"
         type="text"
         value={query}
-        onChange={handleInputChange} // Sorgu değişikliklerini yakalar
-        placeholder="Resim arayın..."
+        onChange={handleInputChange}
+        placeholder="Search for Photos..."
       />
       <button className="searchButton" type="submit">
-        Ara
+        Search 🔍
       </button>
     </form>
   );

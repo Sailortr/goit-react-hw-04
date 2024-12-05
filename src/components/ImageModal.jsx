@@ -13,7 +13,7 @@ const ImageModal = ({ image, onClose }) => {
 
   return (
     <Modal className="imageModal" isOpen={!!image} onRequestClose={onClose}>
-      <button onClick={onClose}>Kapat</button>
+      <button onClick={onClose}>Esc</button>
 
       {isLoading && <Loader />}
 
